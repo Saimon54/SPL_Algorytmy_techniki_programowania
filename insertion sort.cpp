@@ -29,7 +29,7 @@ int main() {
 
     cout << "Array before sorting, filled with pseudorandom elements: " << '\n';
     for (int x = 0; x < n; x++) {
-        tab[x] = rand() % 201-100;
+        tab[x] = rand() % 201-100;    //Range -100 to 100
         cout << tab[x] << " ";
     }
 
@@ -40,3 +40,4 @@ int main() {
     }
 
 }
+
