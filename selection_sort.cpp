@@ -10,17 +10,17 @@ void SelectionSort(int tab[], int n){
         int IndexOfLowestElement = x;
 
         for (int y = x + 1; y < n; y++) {
-            if (tab[y] < tab[IndexOfLowestElement])
+            if (tab[y] < tab[IndexOfLowestElement])        // '>' and '<' decides if algorithm sort in ascending or descending order
                 IndexOfLowestElement = y;
 
         }
 
-        swap(tab[IndexOfLowestElement], tab[x]);
+        swap(tab[IndexOfLowestElement], tab[x]);            // changing the position of LowestElement with the element from current iteration
     }
 }
 
 int main() {
-    srand(time(NULL));
+    srand(time(NULL));    
     const int n = 10;
     int tab[n];
 
@@ -36,4 +36,5 @@ int main() {
     for (int x = 0; x < n; x++) {
         cout << tab[x] << " ";
     }
+
 }
